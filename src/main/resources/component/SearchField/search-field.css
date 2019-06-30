@@ -1,0 +1,16 @@
+.search-field .text-field {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-max-width: 1000px;
+}
+
+.search-field .button {
+    -fx-background-image: url("./search.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+    -fx-min-width: 25px;
+    -fx-min-height: 20px;
+    -fx-cursor: hand;
+}

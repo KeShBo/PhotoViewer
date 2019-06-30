@@ -1,0 +1,39 @@
+.my-text-input-dialog {
+    -fx-background-color: #3c3f41;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 80px;
+    -fx-padding: 2 10;
+}
+
+.my-text-input-dialog .text-field {
+    -fx-background-color: #3c3f41;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(136, 138, 140, 0.3);
+    -fx-border-radius: 2px;
+    -fx-font-size: 12px;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-text-fill: rgba(255, 255, 255, 0.75);
+}
+
+.my-text-input-dialog .text-field:focused {
+    -fx-border-color: rgba(148, 155, 146, 0.6);
+}
+
+.my-text-input-dialog .label {
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+    -fx-padding: 0;
+}
+
+.my-text-input-dialog .button {
+    -fx-background-color: rgba(212, 214, 216, 0.2);
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(212, 214, 216, 0.3);
+    -fx-border-radius: 2px;
+    -fx-text-fill: rgba(255, 255, 255, 0.75);
+    -fx-effect: none;
+}
+
+.my-text-input-dialog .button:armed {
+    -fx-background-color: rgba(159, 161, 163, 0.2);
+}

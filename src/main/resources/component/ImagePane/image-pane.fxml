@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ScrollPane?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="BorderPane" styleClass="image-pane">
+
+    <top>
+        <StackPane fx:id="infoPane">
+            <Button fx:id="backButton" visible="false"/>
+            <Label fx:id="infoLabel"/>
+        </StackPane>
+    </top>
+
+    <center>
+        <!-- StackPane让上下张箭头可以放在图片上面 -->
+        <StackPane fx:id="stackPane">
+            <!-- ScrollPane提供一个Viewport，放大和拖拽图片超出父容器的部分被遮盖 -->
+            <ScrollPane fx:id="viewContainer" hbarPolicy="NEVER" vbarPolicy="NEVER" styleClass="view-pane">
+                <!-- BorderPane方便居中 -->
+                <BorderPane fx:id="viewPane" styleClass="inner-view-pane">
+                    <center>
+                        <ImageView fx:id="imageView"/>
+                    </center>
+                </BorderPane>
+            </ScrollPane>
+            <Button fx:id="leftArrowButton" visible="false"/>
+            <Button fx:id="rightArrowButton" visible="false"/>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <ToolBar fx:id="toolBar"/>
+    </bottom>
+
+    <stylesheets>
+        <URL value="@image-pane.css"/>
+    </stylesheets>
+</fx:root>

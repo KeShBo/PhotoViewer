@@ -1,0 +1,63 @@
+.tree-box {
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 0 1 0 0;
+}
+
+.tree-box .corner {
+    -fx-background-color: -fx-base-background-color;
+}
+
+.tree-box > .tool-bar {
+    -fx-border-width: 0;
+    -fx-background-color: -fx-base-background-color;
+    -fx-pref-height: 25px;
+}
+
+.tree-box > .search-field {
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 1 0 1 0;
+}
+
+.tree-box > .search-field:hover {
+    -fx-border-color: -fx-base-border-color-hover;
+}
+
+.tree-box > .search-field .text-field {
+    -fx-text-fill: -fx-base-text-fill;
+}
+
+.tree-box > .tree-view {
+    -fx-border-width: 0;
+    -fx-border-color: -fx-base-border-color;
+}
+
+.tree-box > .tree-view:focused {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.tree-box > .tree-view .tree-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-base-text-fill;
+    -fx-padding: 0.3555em 0.28em 0.3555em 0.28em;
+}
+
+.tree-box .tree-view, .tree-cell {
+    -fx-background-color: -fx-base-background-color;
+    -fx-text-fill: -fx-base-text-fill;
+}
+
+.tree-box .tree-cell {
+    -fx-border-width: 0;
+}
+
+.tree-view .tree-cell:selected {
+    -fx-background-color: #0d293e;
+}
+
+.tree-view:focused .tree-cell:selected {
+    -fx-background-color: -fx-base-background-color-fucosed;
+}
+
+.tree-box .tree-view > .tree-cell:focused {
+    -fx-background-color: -fx-base-background-color-fucosed;
+}

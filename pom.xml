@@ -11,7 +11,11 @@
     <properties>
         <java.version>11</java.version>
         <javafx.version>11.0.2</javafx.version>
+<<<<<<< HEAD
     </properties>
+=======
+    </properties>  
+>>>>>>> ecfb7426f3f668a569e3ade758bfc178b1da6cb4
 
     <dependencies>
         <dependency>
@@ -42,6 +46,7 @@
     </dependencies>
 
     <build>
+<<<<<<< HEAD
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -72,6 +77,38 @@
             </includes>
         </resource>
     </resources>
+=======
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.jpg</include>
+                    <include>**/*.css</include>
+                    <include>**/*.png</include>
+                    <include>**/*.fxml</include>
+                </includes>
+            </resource>
+        </resources>
+>>>>>>> ecfb7426f3f668a569e3ade758bfc178b1da6cb4
     </build>
 
 </project>

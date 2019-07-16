@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="HBox" styleClass="search-field">
+
+    <TextField fx:id="textField" promptText="搜索" />
+    <Button fx:id="button"/>
+
+    <stylesheets>
+        <URL value="@search-field.css"/>
+    </stylesheets>
+</fx:root>

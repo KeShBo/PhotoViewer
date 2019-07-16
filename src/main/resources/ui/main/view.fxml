@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import cn.keshb.photoview.component.treebox.TreeBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="borderPane"
+            fx:controller="cn.keshb.photoview.Controller" styleClass="main-pane">
+
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu fx:id="fileMenu" text="File">
+                <MenuItem fx:id="menuOpen" text="Open..." onAction="#openFile"/>
+                <MenuItem text="Open URL..." onAction="#openUrl"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Exit" onAction="#exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <TreeBox fx:id="treeBox"/>
+    </left>
+
+    <center>
+        <BorderPane fx:id="contentScrollPane">
+            <center>
+                <Button fx:id="openFileButton" text="Open Folder" onAction="#openFile"/>
+            </center>
+        </BorderPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@css/view.css"/>
+    </stylesheets>
+</BorderPane>

@@ -1,0 +1,171 @@
+.root {
+    /* 自定义的属性，作为整个界面的基础样式，后面使用属性名作为值直接引用 */
+    -fx-base-border-color: rgba(136, 138, 140, 0.3);
+    -fx-base-border-color-hover: rgba(136, 138, 140, 0.75);
+    -fx-base-background-color: #3c3f41;
+    -fx-base-background-color-fucosed: #38839d;
+    -fx-base-text-fill: rgba(255, 255, 255, 0.75);
+
+    /* 全局属性 */
+    -fx-font-size: 12px;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-background-color: -fx-base-background-color;
+}
+
+.main-pane {
+    -fx-pref-height: 500;
+    -fx-pref-width: 800;
+    -fx-min-height: 500;
+    -fx-min-width: 800;
+}
+
+.menu-bar {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-base-border-color;
+    -fx-padding: 0;
+}
+
+.menu-bar, .menu-item {
+    -fx-background-color: #3c3f41;
+}
+
+.menu-bar .menu:hover, .menu-item:hover {
+    -fx-background-color: -fx-base-background-color-fucosed;
+}
+
+.menu-bar .menu:showing, .menu-item:focused {
+    -fx-background-color: -fx-base-background-color-fucosed;
+}
+
+.menu-bar .menu .context-menu {
+    -fx-padding: 0;
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 1px;
+    -fx-background-color: #3c3f41;
+}
+
+.menu-bar .menu .toggle-button {
+    -fx-background-color: #3c3f41;
+}
+
+.menu-bar .menu-item {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 25px;
+    -fx-border-width: 0;
+}
+
+.menu-bar .label {
+    -fx-text-fill: -fx-base-text-fill;
+}
+
+.context-menu .separator {
+    -fx-padding: -1px;
+    -fx-pref-height: 1px;
+    -fx-border-width: 1px;
+}
+
+.context-menu .separator .line {
+    -fx-border-color: -fx-base-border-color;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-pref-height: 10px;
+}
+
+.scroll-bar > .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-bar:vertical > .increment-button,
+.scroll-bar:vertical > .decrement-button,
+.scroll-bar:horizontal > .increment-button,
+.scroll-bar:horizontal > .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.scroll-bar:vertical > .increment-button .increment-arrow,
+.scroll-bar:vertical > .decrement-button .decrement-arrow,
+.scroll-bar:horizontal > .increment-button .increment-arrow,
+.scroll-bar:horizontal > .decrement-button .decrement-arrow {
+    -fx-shape: none;
+    -fx-padding: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+}
+
+
+.tree-box {
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 0 1 0 0;
+    -fx-pref-width: 300px;
+}
+
+.tool-bar {
+    -fx-border-width: 0;
+    -fx-background-color: -fx-base-background-color;
+    -fx-pref-height: 25px;
+}
+
+.search-field {
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 1 0 1 0;
+}
+
+.search-field:hover {
+    -fx-border-color: -fx-base-border-color-hover;
+}
+
+.search-field .text-field {
+    -fx-text-fill: -fx-base-text-fill;
+}
+
+AnchorPane {
+    -fx-text-alignment: center;
+}
+
+#openFileButton {
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-base-text-fill;
+    -fx-background-color: rgb(141, 143, 145);
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(136, 138, 140, 0.5);
+    -fx-border-radius: 2px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+}
+
+#openFileButton:hover {
+    -fx-background-color: rgb(131, 133, 135);
+    -fx-effect: dropshadow(three-pass-box, rgba(176, 183, 174, 0.75), 2, 0.5, 0, 0);
+}
+
+.context-menu {
+    -fx-border-color: -fx-base-border-color;
+    -fx-border-width: 1;
+    -fx-padding: 0;
+    -fx-background-color: -fx-base-background-color;
+}
+
+.context-menu .menu-item {
+    -fx-pref-height: 23px;
+    -fx-padding: 0;
+}
+
+.context-menu .menu-item > .graphic-container {
+    -fx-padding: 0 5 0 5;
+}
+
+.context-menu .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: -fx-base-text-fill;
+}
+
